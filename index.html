@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!-- Icofont CSS -->
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Odometer CSS -->
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Theme Dark CSS -->
+    <link rel="stylesheet" href="assets/css/theme-dark.css">
+
+
+
+
+    <title>Lyzo - Law Firm and Attorney HTML Template</title>
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- aos animations of online cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    .hero {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+        /* Ensures the video does not overflow */
+    }
+
+    .back-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        /* Ensures the video covers the entire background */
+        z-index: 0;
+        /* Pushes the video behind other content */
+        filter: brightness(50%);
+        /* Adjust brightness here (70% is just an example) */
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+        .back-video {
+            height: 100%;
+            /* Adjusts video height for aspect ratio smaller than 16:9 */
+            width: auto;
+            /* Adjusts video width for aspect ratio smaller than 16:9 */
+        }
+    }
+
+
+    /* our all p tag is align */
+    p {
+        text-align: justify;
+    }
+
+
+
+    /* Our Legal Practices Areas */
+
+    #caseImg1:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(img/civil-law.jpg);
+        /* -webkit-transform: translate(0, -10px); */
+        transform: translate(0, -10px);
+
+    }
+
+    #caseImg2:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(img/family-law.jpg);
+        /* -webkit-transform: translate(0, -10px); */
+        transform: translate(0, -10px);
+
+    }
+
+    #caseImg3:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(img/intellectual-property-law.jpg);
+        /* -webkit-transform: translate(0, -10px); */
+        transform: translate(0, -10px);
+
+    }
+
+    #caseImg4:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(img/criminal-law.jpg);
+        /* -webkit-transform: translate(0, -10px); */
+        transform: translate(0, -10px);
+
+    }
+
+    #caseImg5:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(img/cyber-law.jpg);
+        /* -webkit-transform: translate(0, -10px); */
+        transform: translate(0, -10px);
+
+    }
+</style>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="sk-folding-cube">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Navbar -->
+    <div class="navbar-area fixed-top">
+        <!-- Menu For Mobile Device -->
+        <div class="mobile-nav">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Menu For Desktop Device -->
+        <div class="main-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/litem_logo.png" alt="Logo">
+                        &reg;
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle ms-5">IP & Trademark</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="attorney.html" class="nav-link">Trademarks Registration</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link">Trademarks Opposition</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link">Trademarks Objection</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link">Trademarks Infringement</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link">Show Cause Hearing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link">TM Watch Service</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link">TM Litigations</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link">Assignment of TM</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link">TM Dillution</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link">TM Rectification</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link">TM Licencing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="attorney-details.html" class="nav-link dropdown-toggle">Copyright</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-list">
+                                                <a href="#">Copyright Registration</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Legal Services</a>
+                                <ul class="dropdown-menu">
+
+
+                                    <li class="nav-item">
+                                        <a href="case-study.html" class="nav-link dropdown-toggle">Civil</a>
+                                        <ul class="dropdown-menu">
+
+
+                                            <li class="nav-list ">
+                                                <a href="" class="nav-link dropdown-toggle">Property Matter</a>
+
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-list">
+                                                        <a href="">Property Disputes</a>
+                                                    </li>
+                                                    <li class="nav-list">
+                                                        <a href="">RERA Matter</a>
+                                                    </li>
+
+
+                                                    <li class="task">
+                                                        <a href="#" class="" id="adda">Property DOC &nbsp;<i
+                                                                class="fa-solid fa-caret-down"></i></a>
+
+                                                        <ul class="" id="fun-adda">
+                                                            <li class="">
+                                                                <a href="">Will</a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">Will Registration</a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">LOA</a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">Succession Certificate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+
+                                                </ul>
+
+
+                                            </li>
+
+
+                                            <script>
+
+                                                $(document).ready(function () {
+                                                    $('#adda').click(function () {
+                                                        $('#fun-adda').toggle('slow')
+                                                    });
+
+
+                                                })
+
+                                            </script>
+
+
+                                            <li class="nav-list">
+                                                <a href="" class="nav-link dropdown-toggle">Consumer Matter</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-list">
+                                                        <a href="" class="nav-link">Drafting Complaint</a>
+                                                    </li>
+                                                    <li class="nav-list">
+                                                        <a href="" class="nav-link">Inflated Electricity Bill</a>
+                                                    </li>
+                                                    <li class="nav-list">
+                                                        <a href="" class="nav-link">Food Adulteration</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+
+                                            <li class="nav-list">
+                                                <a href="">Loan Settlement</a>
+                                            </li>
+                                            <li class="nav-list">
+                                                <a href="">Money Recovery</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a href="case-study-details.html" class="nav-link dropdown-toggle">Criminal</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-list">
+                                                <a href="">Bail Application</a>
+                                            </li>
+                                            <li class="nav-list">
+                                                <a href="">POCSO Act</a>
+                                            </li>
+                                            <li class="nav-list">
+                                                <a href="">Domestic Violence</a>
+                                            </li>
+                                            <li class="nav-list">
+                                                <a href="">Harrasment</a>
+                                            </li>
+                                            <li class="nav-list">
+                                                <a href="">Cyber Crime</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Marriage</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">Court Marriage</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-details.html" class="nav-link">Marriage Regisration</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-details.html" class="nav-link">AryaSamaj Court Marriage</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Matrimonail Disputes</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="practice.html" class="nav-link">Divorce</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="practice-details.html" class="nav-link">Mutual Divorce</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="appointment.html" class="nav-link">Maintance</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="testimonial.html" class="nav-link">Child Custody</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="faq.html" class="nav-link">Dowry Harresment</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="404.html" class="nav-link">Marriage Annulmant</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link dropdown-toggle">More</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-list">
+                                        <a href="#">LEI Registration</a>
+                                    </li>
+                                    <li class="nav-list">
+                                        <a href="#">Partnership Deed</a>
+                                    </li>
+                                    <li class="nav-list">
+                                        <a href="#">MACI</a>
+                                    </li>
+                                    <li class="nav-list">
+                                        <a href="#">Franchise Agreement</a>
+                                    </li>
+                                    <li class="nav-list">
+                                        <a href="#">Bail</a>
+                                    </li>
+                                    <li class="nav-list">
+                                        <a href="#">POSH Annual Report</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">Talk To Lawyer</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Home Slider -->
+    <div class="home-slider-area">
+        <div class="home-slider owl-theme owl-carousel">
+
+            <div class="slider-item slider-bg-one">
+                <div class="hero">
+
+                    <video autoplay loop muted plays-inline class="back-video">
+                        <source src="img/challanges.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="d-table">
+                        <div class="d-table-cell">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="slider-text">
+                                            <h1 style="font-family: 'Roboto', sans-serif; font-size: 50px;">We are
+                                                always ready to defend your legal interests.
+
+                                            </h1>
+
+                                            <a href="#">Get CONSULTATION
+                                                <i class="icofont-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="slider-shape">
+                                            <!-- <img class="s-s-one" src="img/legal-rofessionals.jpg" alt=""> -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-item slider-bg-one">
+
+                <div class="hero">
+                    <video autoplay loop muted plays-inline class="back-video">
+                        <source src="img/legal interest.mp4" type="video/mp4">
+                    </video>
+
+
+                    <div class="d-table">
+                        <div class="d-table-cell">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="slider-text">
+                                            <h1 style="font-family: 'Roboto', sans-serif; font-size: 50px;">We are proud
+                                                of standing up for your challenges.
+                                            </h1>
+
+                                            <a href="#">FREE CONSULTATION
+                                                <i class="icofont-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="slider-shape">
+                                            <!-- <img class="s-s-two" src="assets/img/home-two/home-slider/3.png" alt=""> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slider-item slider-bg-one">
+
+                <div class="hero">
+                    <video autoplay loop muted plays-inline class="back-video">
+                        <source src="img/priviledge.mp4" type="video/mp4">
+                    </video>
+
+
+                    <div class="d-table">
+                        <div class="d-table-cell">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="slider-text">
+                                            <h1 style="font-family: 'Roboto', sans-serif; font-size: 50px;"> Our primary
+                                                objective is to secure your privileges.
+                                            </h1>
+
+                                            <a href="#">FREE CONSULTATION
+                                                <i class="icofont-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="slider-shape">
+                                            <!-- <img class="s-s-three" src="assets/img/home-two/home-slider/4.png" alt=""> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Home Slider -->
+
+    <!-- Slider Bottom -->
+    <div class="slider-bottom-area">
+        <div class="container">
+            <div class="row slider-bottom-wrap">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="banner-bottom">
+                        <ul>
+                            <li>
+                                <i class="flaticon-leader"></i>
+                            </li>
+                            <li>
+                                <span>100% Legal</span>
+                                <h6 id="ab">Govt Approved</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="banner-bottom">
+                        <ul>
+                            <li>
+                                <i class="flaticon-auction"></i>
+                            </li>
+                            <li>
+                                <span>Trusted</span>
+                                <h6 id="ab">99% Case Won</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
+                    <div class="banner-bottom">
+                        <ul>
+                            <li>
+                                <i class="flaticon-support"></i>
+                            </li>
+                            <li>
+                                <span>Support</span>
+                                <h6 id="ab">Full Time Support</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider Bottom -->
+
+    <!-- Help -->
+    <div class="help-area help-area-three pb-70">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="help-item help-left">
+                        <img src="img/legal-rofessionals.jpg" alt="Help">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="help-item">
+                        <div class="help-right">
+                            <h2 data-aos="fade-right" data-aos-duration="3000">We Provide Experienced Legal
+                                Professionals To Assist You</h2>
+                            <p>The team of Litem Legalis aims to serve an expert guidance and representation to your
+                                legal challenges with confidance and efficiency. We offer experienced legal
+                                professionals who skilled in IP registration, civil as well as criminal matters. Trust
+                                us for comprehnsive legal support.
+                            </p>
+                            <div class="help-inner-left">
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-checkmark"></i>
+                                        Free Primary Consultation
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-checkmark"></i>
+                                        Lowest Fee
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="help-inner-right">
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-checkmark"></i>
+                                        Expert Lawyer
+                                    </li>
+                                    <li style=" word-spacing: 8px;">
+                                        <i class="flaticon-checkmark"></i>
+                                        Quick Process
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a class="cmn-btn mt-5" href="practice.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="help-shape">
+                <img src="assets/img/home-one/6.png" alt="Shape">
+            </div>
+        </div>
+    </div>
+    <!-- End Help -->
+
+
+
+    <!-- Practice -->
+    <!-- <section class="practice-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title">
+                    <span>HOW CAN WE HELP YOU</span>
+                    <h2>Our Legal Practices Areas</h2>
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="practice-item" id="caseImg1">
+                            <div class="practice-icon">
+                                <i class="flaticon-law"></i>
+                            </div>
+                            <h3>Civil Law</h3>
+                            <p>Civil Law pertains to non-criminal matters that is related to the individual, company or organisations. From property disputes to negotiation, our legal team handles wide range of civil matters.</p>
+                            <a href="practice-details.html">Read More</a>
+                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="practice-item" id="caseImg2">
+                            <div class="practice-icon">
+                                <i class="flaticon-family"></i>
+                            </div>
+                            <h3>Family Law</h3>
+                            <p>Family law encompasses divorce, child custody, harassment, domestic violence, and more, addressing sensitive issues with compassion and expertise to secure the future of your loved ones.</p>
+                            <a href="practice-details.html">Read More</a>
+                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="practice-item" id="caseImg3">
+                            <div class="practice-icon">
+                                <i class="flaticon-inheritance"></i>
+                            </div>
+                            <h3>Intellectual Property Law</h3>
+                            <p>Litem protects intellectual property rights, safeguarding art, inventions, and designs through registration and enforcement, ensuring legal protection for your creative expressions and innovative ideas.</p>
+                            <a href="practice-details.html">Read More</a>
+                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                        </div>
+                    </div>
+
+
+                  <div class="d-flex justify-content-evenly">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="practice-item" id="caseImg4">
+                            <div class="practice-icon">
+                                <i class="flaticon-auction"></i>
+                            </div>
+                            <h3>Criminal Law</h3>
+                            <p>Criminal law pertains matters related to criminal offences such as theft, fraud, assault, and murder. Our team is dedicated to protecting your rights and providing the best possible representation.</p>
+                            <a href="practice-details.html">Read More</a>
+                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="practice-item" id="caseImg5">
+                            <div class="practice-icon">
+                                <i class="flaticon-vulnerability"></i>
+                            </div>
+                            <h3>Cyber Law</h3>
+                            <p>Specializing in cyber law, we combat cybercrime, secure digital assets, and pursue justice for data breaches and online fraud. Trust our expertise to navigate the digital realm and safeguard your interests effectively.</p>
+                            <a href="practice-details.html">Read More</a>
+                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                        </div>
+                    </div>
+                  </div>
+
+
+                </div>
+            </div>
+        </section> -->
+    <!-- End Practice -->
+
+
+    <!-- Practice -->
+    <section class="blog-area pt-100">
+        <div class="container">
+            <div class="section-title">
+                <span>HOW CAN WE HELP YOU</span>
+                <h2>Our Legal Practices Areas</h2>
+            </div>
+            <div class="blog-slider owl-theme owl-carousel">
+
+
+                <!-- 1 caursal of blog -->
+
+                <div class="blog-item">
+
+
+                    <div class="practice-item" id="caseImg1">
+                        <div class="practice-icon">
+                            <i class="flaticon-law"></i>
+                        </div>
+                        <h3>Civil Law</h3>
+                        <p>Civil Law pertains to non-criminal matters that is related to the individual, company or
+                            organisations. From property disputes to negotiation, our legal team handles wide range of
+                            civil matters.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+
+                </div>
+
+
+                <div class="blog-item">
+
+
+                    <div class="practice-item" id="caseImg2">
+                        <div class="practice-icon">
+                            <i class="flaticon-family"></i>
+                        </div>
+                        <h3>Family Law</h3>
+                        <p>Family law encompasses divorce, child custody, harassment, domestic violence, and more,
+                            addressing sensitive issues with compassion and expertise to secure the future of your loved
+                            ones.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <div class="blog-item">
+
+                    <div class="practice-item" id="caseImg3">
+                        <div class="practice-icon">
+                            <i class="flaticon-inheritance"></i>
+                        </div>
+                        <h3>Intellectual Property Law</h3>
+                        <p>Litem protects intellectual property rights, safeguarding art, inventions, and designs
+                            through registration and enforcement, ensuring legal protection for your creative
+                            expressions and innovative ideas.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <div class="blog-item">
+
+                    <div class="practice-item" id="caseImg4">
+                        <div class="practice-icon">
+                            <i class="flaticon-auction"></i>
+                        </div>
+                        <h3>Criminal Law</h3>
+                        <p>Criminal law pertains matters related to criminal offences such as theft, fraud, assault, and
+                            murder. Our team is dedicated to protecting your rights and providing the best possible
+                            representation.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <div class="blog-item">
+                    <div class="practice-item" id="caseImg5">
+                        <div class="practice-icon">
+                            <i class="flaticon-vulnerability"></i>
+                        </div>
+                        <h3>Cyber Law</h3>
+                        <p>
+                            Specializing in cyber law, we combat cybercrime, secure digital assets, and pursue justice
+                            for breaches and online fraud. Trust our expertise to safeguard your interests in the
+                            digital realm effectively and efficiently.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+
+                <!-- 2 caursal of blog -->
+
+                <div class="blog-item">
+
+
+                    <div class="practice-item" id="caseImg1">
+                        <div class="practice-icon">
+                            <i class="flaticon-law"></i>
+                        </div>
+                        <h3>Civil Law</h3>
+                        <p>Civil Law pertains to non-criminal matters that is related to the individual, company or
+                            organisations. From property disputes to negotiation, our legal team handles wide range of
+                            civil matters.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+
+                </div>
+
+
+                <div class="blog-item">
+
+                    <div class="practice-item" id="caseImg2">
+                        <div class="practice-icon">
+                            <i class="flaticon-family"></i>
+                        </div>
+                        <h3>Family Law</h3>
+                        <p>Family law encompasses divorce, child custody, harassment, domestic violence, and more,
+                            addressing sensitive issues with compassion and expertise to secure the future of your loved
+                            ones.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <div class="blog-item">
+
+                    <div class="practice-item" id="caseImg3">
+                        <div class="practice-icon">
+                            <i class="flaticon-inheritance"></i>
+                        </div>
+                        <h3>Intellectual Property Law</h3>
+                        <p>Litem protects intellectual property rights, safeguarding art, inventions, and designs
+                            through registration and enforcement, ensuring legal protection for your creative
+                            expressions and innovative ideas.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <div class="blog-item">
+
+                    <div class="practice-item" id="caseImg4">
+                        <div class="practice-icon">
+                            <i class="flaticon-auction"></i>
+                        </div>
+                        <h3>Criminal Law</h3>
+                        <p>Criminal law pertains matters related to criminal offences such as theft, fraud, assault, and
+                            murder. Our team is dedicated to protecting your rights and providing the best possible
+                            representation.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <div class="blog-item">
+                    <div class="practice-item" id="caseImg5">
+                        <div class="practice-icon">
+                            <i class="flaticon-vulnerability"></i>
+                        </div>
+                        <h3>Cyber Law</h3>
+                        <p>
+                            Specializing in cyber law, we combat cybercrime, secure digital assets, and pursue justice
+                            for breaches and online fraud. Trust our expertise to safeguard your interests in the
+                            digital realm effectively and efficiently.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <!-- 3 caursal of blog -->
+
+                <div class="blog-item">
+
+
+                    <div class="practice-item" id="caseImg1">
+                        <div class="practice-icon">
+                            <i class="flaticon-law"></i>
+                        </div>
+                        <h3>Civil Law</h3>
+                        <p>Civil Law pertains to non-criminal matters that is related to the individual, company or
+                            organisations. From property disputes to negotiation, our legal team handles wide range of
+                            civil matters.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+
+                </div>
+
+
+                <div class="blog-item">
+
+                    <div class="practice-item" id="caseImg2">
+                        <div class="practice-icon">
+                            <i class="flaticon-family"></i>
+                        </div>
+                        <h3>Family Law</h3>
+                        <p>Family law encompasses divorce, child custody, harassment, domestic violence, and more,
+                            addressing sensitive issues with compassion and expertise to secure the future of your loved
+                            ones.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <div class="blog-item">
+
+                    <div class="practice-item" id="caseImg3">
+                        <div class="practice-icon">
+                            <i class="flaticon-inheritance"></i>
+                        </div>
+                        <h3>Intellectual Property Law</h3>
+                        <p>Litem protects intellectual property rights, safeguarding art, inventions, and designs
+                            through registration and enforcement, ensuring legal protection for your creative
+                            expressions and innovative ideas.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <div class="blog-item">
+
+                    <div class="practice-item" id="caseImg4">
+                        <div class="practice-icon">
+                            <i class="flaticon-auction"></i>
+                        </div>
+                        <h3>Criminal Law</h3>
+                        <p>Criminal law pertains matters related to criminal offences such as theft, fraud, assault, and
+                            murder. Our team is dedicated to protecting your rights and providing the best possible
+                            representation.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <div class="blog-item">
+
+                    <div class="practice-item" id="caseImg5">
+                        <div class="practice-icon">
+                            <i class="flaticon-vulnerability"></i>
+                        </div>
+                        <h3>Cyber Law</h3>
+                        <p>
+                            Specializing in cyber law, we combat cybercrime, secure digital assets, and pursue justice
+                            for breaches and online fraud. Trust our expertise to safeguard your interests in the
+                            digital realm effectively and efficiently.</p>
+                        <a href="practice-details.html">Read More</a>
+                        <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
+                        <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- End Practice -->
+
+
+    <!-- Expertise -->
+    <section class="expertise-area expertise-area-two">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-left">
+                        <span>OUR EXPERTISE</span>
+                        <h2>Devoted toward Client </h2>
+                    </div>
+                    <div class="expertise-item">
+                        <ul>
+                            <li class="wow fadeInUp" data-wow-delay=".3s">
+                                <div class="expertise-icon">
+                                    <i class="flaticon-experience"></i>
+                                    <img src="assets/img/home-one/11.png" alt="Shape">
+                                </div>
+                                <h3>Experience</h3>
+                                <p>With years of legal experience, we successfully negotiate challenges to provide
+                                    specialized solutions that meet our clients' demands.</p>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay=".4s">
+                                <div class="expertise-icon">
+                                    <i class="flaticon-lawyer"></i>
+                                    <img src="assets/img/home-one/11.png" alt="Shape">
+                                </div>
+                                <h3>Professional Team</h3>
+                                <p>The team of Litem Legalis dedicated to provide expert guidance and offering top-notch
+                                    representation, ensuring clients receive the highest standard of service</p>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay=".5s">
+                                <div class="expertise-icon">
+                                    <i class="flaticon-balance"></i>
+                                    <img src="assets/img/home-one/11.png" alt="Shape">
+                                </div>
+                                <h3>Quick Process</h3>
+                                <p>We understand the urgency of legal matters. Our hastened procedures and effective
+                                    approach facilitate quick resolutions, saving our clients' time and suffering.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="expertise-image">
+                        <img src="img/our-expertise.jpg" alt="Expertise">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Expertise -->
+
+
+
+    <!-- Team -->
+    <section class="team-area mt-5">
+        <div class="container">
+            <div class="section-title">
+                <span>TEAM MEMBER</span>
+                <h2>Meet Our Expert Attorneys</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team-item">
+                        <img src="assets/img/home-one/team/1.jpg" alt="Team">
+                        <div class="team-inner">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank">
+                                        <i class="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="attorney-details.html">Attor. Jerry Hudson</a>
+                            </h3>
+                            <span>Family Consultant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team-item">
+                        <img src="assets/img/home-one/team/2.jpg" alt="Team">
+                        <div class="team-inner">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank">
+                                        <i class="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="attorney-details.html">Attor. Juho Hudson</a>
+                            </h3>
+                            <span>Criminal Consultant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team-item">
+                        <img src="assets/img/home-one/team/3.jpg" alt="Team">
+                        <div class="team-inner">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" target="_blank">
+                                        <i class="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="attorney-details.html">Attor. Sarah Se</a>
+                            </h3>
+                            <span>Divorce Consultant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team-item">
+                        <img src="assets/img/home-one/team/4.jpg" alt="Team">
+                        <div class="team-inner">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3>
+                                <a href="attorney-details.html">Attor. Aikin Ward</a>
+                            </h3>
+                            <span>Business Consultant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Team -->
+
+    <!-- Contact Form -->
+    <div class="contact-form pb-100">
+
+        <!-- Counter -->
+        <div class="counter-area counter-area-two">
+            <div class="container">
+                <div class="row counter-bg">
+                    <div class="col-6 col-sm-3 col-lg-3">
+                        <div class="counter-item">
+                            <i class="flaticon-judge"></i>
+                            <div class="counter-inner">
+                                <h3>
+                                    <span class="odometer" data-count="18">00</span>
+                                    <span class="target">+</span>
+                                </h3>
+                                <p>Attorneys</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-3">
+                        <div class="counter-item">
+                            <i class="flaticon-auction"></i>
+                            <div class="counter-inner">
+                                <h3>
+                                    <span class="odometer" data-count="99">00</span>
+                                    <span class="target">%</span>
+                                </h3>
+                                <p>Case Won</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-3">
+                        <div class="counter-item">
+                            <i class="flaticon-medal"></i>
+                            <div class="counter-inner">
+                                <h3>
+                                    <span class="odometer" data-count="100">00</span>
+                                    <span class="target">%</span>
+                                </h3>
+                                <p>Legal Way</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-3">
+                        <div class="counter-item">
+                            <i class="flaticon-team"></i>
+                            <div class="counter-inner">
+                                <h3>
+                                    <span class="odometer" data-count="10">00</span>
+                                    <span class="target">k</span>
+                                </h3>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Counter -->
+
+        <div class="container-fluid img-fluid"
+            style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(img/Untitled-1.jpg); background-size: cover; ">
+            <form id="contactForm" class="p-5">
+                <div class="row contact-wrap">
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" required
+                                data-error="Please enter your name" placeholder="Your Full Name">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control" required
+                                data-error="Please enter your email" placeholder="Your Email">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                            <input type="text" name="phone_number" id="phone_number" required
+                                data-error="Please enter your number" class="form-control" placeholder="Your Phone">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                            <input type="text" name="msg_subject" id="msg_subject" class="form-control" required
+                                data-error="Please enter your subject" placeholder="Subject">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-12">
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="8" required
+                                data-error="Write your message" placeholder="Case Description"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-12">
+                        <div class="text-center">
+                            <button type="submit" class="contact-btn">
+                                <span> </span>
+                                <span> </span>
+                                <span> </span>
+                                <span> </span>
+
+                                Submit Case
+                            </button>
+                        </div>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Contact Form -->
+
+    <!-- Blog -->
+    <section class="blog-area pt-100">
+        <div class="container">
+            <div class="section-title">
+                <span>BLOG</span>
+                <h2>Our Latest Blogs</h2>
+            </div>
+            <div class="blog-slider owl-theme owl-carousel">
+                <div class="blog-item">
+                    <a href="blog-details.html">
+                        <img src="assets/img/home-one/blog/1.jpg" alt="Blog">
+                    </a>
+                    <div class="blog-inner">
+                        <span>Rights Case</span>
+                        <h3>
+                            <a href="blog-details.html">Justice May For You If You Are Innocent</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2020
+                            </li>
+                            <li>
+                                <i class="icofont-user-alt-7"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
+                            labore.</p>
+                        <a class="blog-link" href="blog-details.html">
+                            Read More
+                            <i class="icofont-simple-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <a href="blog-details.html">
+                        <img src="assets/img/home-one/blog/2.jpg" alt="Blog">
+                    </a>
+                    <div class="blog-inner">
+                        <span>Business Case</span>
+                        <h3>
+                            <a href="blog-details.html">By Whom Your Business Is Being Loss?</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2020
+                            </li>
+                            <li>
+                                <i class="icofont-user-alt-7"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
+                            labore.</p>
+                        <a class="blog-link" href="blog-details.html">
+                            Read More
+                            <i class="icofont-simple-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <a href="blog-details.html">
+                        <img src="assets/img/home-one/blog/3.jpg" alt="Blog">
+                    </a>
+                    <div class="blog-inner">
+                        <span>Criminal Case</span>
+                        <h3>
+                            <a href="blog-details.html">Who Can The Victim A Sue After A Car Accident?</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2020
+                            </li>
+                            <li>
+                                <i class="icofont-user-alt-7"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
+                            labore.</p>
+                        <a class="blog-link" href="blog-details.html">
+                            Read More
+                            <i class="icofont-simple-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <a href="blog-details.html">
+                        <img src="assets/img/home-one/blog/1.jpg" alt="Blog">
+                    </a>
+                    <div class="blog-inner">
+                        <span>Rights Case</span>
+                        <h3>
+                            <a href="blog-details.html">Justice May For You If You Are Innocent</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2020
+                            </li>
+                            <li>
+                                <i class="icofont-user-alt-7"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
+                            labore.</p>
+                        <a class="blog-link" href="blog-details.html">
+                            Read More
+                            <i class="icofont-simple-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <a href="blog-details.html">
+                        <img src="assets/img/home-one/blog/2.jpg" alt="Blog">
+                    </a>
+                    <div class="blog-inner">
+                        <span>Business Case</span>
+                        <h3>
+                            <a href="blog-details.html">By Whom Your Business Is Being Loss?</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2020
+                            </li>
+                            <li>
+                                <i class="icofont-user-alt-7"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
+                            labore.</p>
+                        <a class="blog-link" href="blog-details.html">
+                            Read More
+                            <i class="icofont-simple-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <a href="blog-details.html">
+                        <img src="assets/img/home-one/blog/3.jpg" alt="Blog">
+                    </a>
+                    <div class="blog-inner">
+                        <span>Criminal Case</span>
+                        <h3>
+                            <a href="blog-details.html">Who Can The Victim A Sue After A Car Accident?</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2020
+                            </li>
+                            <li>
+                                <i class="icofont-user-alt-7"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
+                            labore.</p>
+                        <a class="blog-link" href="blog-details.html">
+                            Read More
+                            <i class="icofont-simple-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <a href="blog-details.html">
+                        <img src="assets/img/home-one/blog/1.jpg" alt="Blog">
+                    </a>
+                    <div class="blog-inner">
+                        <span>Rights Case</span>
+                        <h3>
+                            <a href="blog-details.html">Justice May For You If You Are Innocent</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2020
+                            </li>
+                            <li>
+                                <i class="icofont-user-alt-7"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
+                            labore.</p>
+                        <a class="blog-link" href="blog-details.html">
+                            Read More
+                            <i class="icofont-simple-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <a href="blog-details.html">
+                        <img src="assets/img/home-one/blog/2.jpg" alt="Blog">
+                    </a>
+                    <div class="blog-inner">
+                        <span>Business Case</span>
+                        <h3>
+                            <a href="blog-details.html">By Whom Your Business Is Being Loss?</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2020
+                            </li>
+                            <li>
+                                <i class="icofont-user-alt-7"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
+                            labore.</p>
+                        <a class="blog-link" href="blog-details.html">
+                            Read More
+                            <i class="icofont-simple-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <a href="blog-details.html">
+                        <img src="assets/img/home-one/blog/3.jpg" alt="Blog">
+                    </a>
+                    <div class="blog-inner">
+                        <span>Criminal Case</span>
+                        <h3>
+                            <a href="blog-details.html">Who Can The Victim A Sue After A Car Accident?</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <i class="icofont-calendar"></i>
+                                20 Feb 2020
+                            </li>
+                            <li>
+                                <i class="icofont-user-alt-7"></i>
+                                <a href="#">John Doe</a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut
+                            labore.</p>
+                        <a class="blog-link" href="blog-details.html">
+                            Read More
+                            <i class="icofont-simple-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog -->
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Newsletter -->
+        <div class="newsletter-area">
+            <div class="container">
+                <img src="assets/img/home-one/newsletter.png" alt="Shape">
+                <h2>Subscribe Newsletter</h2>
+                <form class="newsletter-form" data-toggle="validator">
+                    <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required
+                        autocomplete="off">
+
+                    <button class="btn contact-btn" type="submit">
+                        Subscribe
+                    </button>
+
+                    <div id="validator-newsletter" class="form-result"></div>
+                </form>
+            </div>
+        </div>
+        <!-- End Newsletter -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="footer-item">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="img/litem_logo.png" alt="Logo">
+                            </a>
+                            <!-- <p>Our Squad of Attorneys are always here to provide you the best and efficient service.
+                                Still, if you want to know more about us and our firm, you can connect us through social
+                                media.</p> -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.6951938385373!2d77.2492400253324!3d28.548880075710564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce35a85999311%3A0xf0ea5d45c6d65cea!2sProfessional%20Utilities!5e0!3m2!1sen!2sin!4v1707895265589!5m2!1sen!2sin"
+                                width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"  >
+                            </iframe>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/" target="_blank">
+                                        <i class="icofont-youtube-play"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-service">
+                            <h3>Services</h3>
+                            <ul>
+                                <li>
+                                    <a href="practice-details.html">
+                                        <i class="icofont-simple-right"></i>
+                                        Family Law
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="practice-details.html">
+                                        <i class="icofont-simple-right"></i>
+                                        Education Law
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="practice-details.html">
+                                        <i class="icofont-simple-right"></i>
+                                        Civil Law
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="practice-details.html">
+                                        <i class="icofont-simple-right"></i>
+                                        Criminal Law
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="practice-details.html">
+                                        <i class="icofont-simple-right"></i>
+                                        Business Law
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="footer-item">
+                        <div class="footer-service">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        <i class="icofont-simple-right"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about.html">
+                                        <i class="icofont-simple-right"></i>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog.html">
+                                        <i class="icofont-simple-right"></i>
+                                        Blogs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="attorney.html">
+                                        <i class="icofont-simple-right"></i>
+                                        Team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="testimonial.html">
+                                        <i class="icofont-simple-right"></i>
+                                        Testimonial
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-find">
+                            <h3>Find Us</h3>
+                            <ul>
+                                <li>
+                                    <i class="icofont-location-pin"></i>
+                                    Office No. 804, 8th Floor, Bhandari House, Nehru Place, New Delhi - 110019
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-call"></i>
+                                    <a href="tel:+91 7409697047">+91 7409697047</a>
+                                </li>
+                                <li>
+                                    <i class="icofont-at"></i>
+                                    <a href="mailto:support@litem.in">support@litem.in</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="row">
+                    <div class="col-sm-7 col-lg-6">
+                        <div class="copyright-item">
+                            <p>Copyright @
+                                <script>document.write(new Date().getFullYear())</script> Lyzo. Designed By <a
+                                    href="https://hibootstrap.com/" target="_blank">HiBootstrap</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-6">
+                        <div class="copyright-item copyright-right">
+                            <a href="terms-conditions.html" target="_blank">Terms & Conditions</a> <span>-</span>
+                            <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- aos animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Essential JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Form Ajaxchimp JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Form Validator JS -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact JS -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Odometer JS -->
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+
+
+</body>
+
+</html>
